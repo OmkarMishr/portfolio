@@ -27,6 +27,8 @@ import {
   threejs,
   next,
   Hotelzz,
+  AchievR,
+  EBMR,
 } from "../assets";
 
 export const navLinks = [
@@ -42,6 +44,11 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "resume",
+    title: "Resume",
+  },
+
 ];
 
 const services = [
@@ -180,61 +187,72 @@ const projects = [
       "Enforced Next.js and React.js to ensure seamless user experience.Integrated Sanity.io as an in-built CMS for dynamic content management.Implemented Stripe payment gateway for secure and efficient transaction processing",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nextjs",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "sanity.io",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "green-text-gradient",
+      },
     ],
     image: Hotelzz,
     source_code_link: "https://https://github.com/OmkarMishr/hotel-management",
   },
   {
-    name: "Job IT",
+    name: "AchievR ",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A full-stack web app for students to submit co-curricular achievements, get them faculty-verified, and generatetamper-proof digital certificates with QR-based verification.Developed a certificate service using pdf-lib and QRCode to generate professional certificates, send them via email, and expose verification endpoints consumed by a dedicated Verify Certificate page.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "MongoDB",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: AchievR,
+    source_code_link: "https://github.com/OmkarMishr/HackTitans-AchievR",
   },
   {
-    name: "Trip Guide",
+    name: "Emotion-Based Music Recommender",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Python and Streamlit-based web application that detects a user’s real-time emotion from facial expressions and text sentiment using computer vision and ML models, then recommends mood-aligned songs by mapping emotions to curated playlists via YouTube APIs.",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Keras Model",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "streamlit",
         color: "pink-text-gradient",
+      },{
+        name: "Numpy",
+        color: "blue-text-gradient",
       },
     ],
-    image: tripguide,
+    image: EBMR,
     source_code_link: "https://github.com/",
   },
 ];
