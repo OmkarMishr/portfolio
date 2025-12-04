@@ -198,7 +198,28 @@ const skillsData = [
     ],
   },
 ];
-
+const statCards = [
+  {
+    label: "Years Experience",
+    value: "1.5+",
+    sub: "Hands‑on production work",
+  },
+  {
+    label: "Projects Delivered",
+    value: "5+",
+    sub: "eLearning, Escrow, Portfolio",
+  },
+  {
+    label: "Internships",
+    value: "2",
+    sub: "Full‑Stack & Backend",
+  },
+  {
+    label: "CPI",
+    value: "7.9+",
+    sub: "Consistently high",
+  },
+];
 const projects = [
   {
     name: "Hotel Management with CMS ",
@@ -276,4 +297,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, skillsData, projects };
+export { services, technologies, experiences, skillsData, projects,statCards };

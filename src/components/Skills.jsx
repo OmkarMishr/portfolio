@@ -1,38 +1,8 @@
 import React from "react";
 import { skillsData } from "../constants";
+import { statCards } from "../constants";
 import { styles } from "../styles";
 
-
-
-const statCards = [
-  {
-    label: "Years Experience",
-    value: "1.5+",
-    sub: "Hands‑on production work",
-  },
-  {
-    label: "Projects Delivered",
-    value: "5+",
-    sub: "eLearning, Escrow, Portfolio",
-  },
-  {
-    label: "Internships",
-    value: "2",
-    sub: "Full‑Stack & Backend",
-  },
-  {
-    label: "CPI",
-    value: "7.9+",
-    sub: "Consistently high",
-  },
-];
-
-const principles = [
-  "Ship with intent — measure impact and iterate quickly.",
-  "Design for change — clean abstractions and clear boundaries.",
-  "Performance first — fast APIs, optimized queries, smooth UI.",
-  "Ownership — from architecture to deployment and monitoring.",
-];
 
 const Skills = () => {
   return (
@@ -64,21 +34,6 @@ const Skills = () => {
             </div>
           ))}
 
-          {/* Principles card (spans one col on md like in ref) */}
-          <div className="md:col-span-1 rounded-2xl border border-slate-700 bg-slate-900/60 px-5 py-5 flex flex-col
-                          hover:border-blue-500/80 hover:-translate-y-1 transition-all duration-300">
-            <div className="text-sm font-semibold mb-2">
-              Principles I work by
-            </div>
-            <ul className="space-y-2 text-xs text-slate-300">
-              {principles.map((p) => (
-                <li key={p} className="flex gap-2">
-                  <span className="text-blue-400 mt-[2px]">•</span>
-                  <span>{p}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Skills grid */}
