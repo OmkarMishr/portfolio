@@ -30,7 +30,6 @@ import {
   AchievR,
   EBMR,
 } from "../assets";
-import { Code2,Wrench,Cloud,Server } from "lucide-react";
 
 export const navLinks = [
   {
@@ -38,16 +37,16 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
+    id: "skills",
+    title: "Skills",
   },
   {
     id: "resume",
     title: "Resume",
+  },
+  {
+    id: "contact",
+    title: "Contact",
   },
 
 ];
@@ -154,51 +153,29 @@ const experiences = [
   },
 ];
 
-const skillsData = [
+
+const statCards = [
   {
-    title: "Frontend Engineering",
-    icon: "💻",
-    meta: "4 skills",
-    items: [
-      { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 65 },
-      { name: "Tailwind CSS", level: 95 },
-    ],
+    label: "Years Experience",
+    value: "1.5+",
+    sub: "Hands‑on production work",
   },
   {
-    title: "Backend & APIs",
-    icon: "🧩",
-    meta: "4 skills",
-    items: [
-      { name: "Node.js", level: 85 },
-      { name: "Express.js", level: 80 },
-      { name: "Python", level: 75 },
-      { name: "Django", level: 70 },
-    ],
+    label: "Projects Delivered",
+    value: "5+",
+    sub: "eLearning, Escrow, Portfolio",
   },
   {
-    title: "Cloud & Databases",
-    icon: "☁️",
-    meta: "3 skills",
-    items: [
-      { name: "MongoDB", level: 85 },
-      { name: "MySQL", level: 80 },
-      { name: "Docker", level: 75 },
-    ],
+    label: "Internships",
+    value: "2",
+    sub: "Full‑Stack & Backend",
   },
   {
-    title: "DevOps & Tooling",
-    icon: "🛠",
-    meta: "3 skills",
-    items: [
-      { name: "Git", level: 90 },
-      { name: "CI/CD", level: 75 },
-      { name: "Linux", level: 80 },
-    ],
+    label: "CPI",
+    value: "7.9+",
+    sub: "Consistently high",
   },
 ];
-
 const projects = [
   {
     name: "Hotel Management with CMS ",
@@ -227,7 +204,7 @@ const projects = [
       },
     ],
     image: Hotelzz,
-    source_code_link: "https://https://github.com/OmkarMishr/hotel-management",
+    source_code_link: "https://github.com/OmkarMishr/hotel-management",
   },
   {
     name: "AchievR ",
@@ -272,8 +249,8 @@ const projects = [
       },
     ],
     image: EBMR,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/OmkarMishr/Emotion-Bashed-Music-Recommender",
   },
 ];
 
-export { services, technologies, experiences, skillsData, projects };
+export { services, technologies, experiences, projects,statCards };

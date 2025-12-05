@@ -1,37 +1,52 @@
 import React from "react";
-import { skillsData } from "../constants";
+import { statCards } from "../constants";
 import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { Code2,Wrench,Cloud,Container } from "lucide-react";
 
-
-
-const statCards = [
+const skillsData = [
   {
-    label: "Years Experience",
-    value: "1.5+",
-    sub: "Hands‑on production work",
+    title: "Frontend Engineering",
+    icon: <Code2 />,
+    meta: "4 skills",
+    items: [
+      { name: "React", level: 90 },
+      { name: "Next.js", level: 85 },
+      { name: "TypeScript", level: 65 },
+      { name: "Tailwind CSS", level: 95 },
+    ],
   },
   {
-    label: "Projects Delivered",
-    value: "5+",
-    sub: "eLearning, Escrow, Portfolio",
+    title: "Backend & APIs",
+    icon: <Wrench />,
+    meta: "4 skills",
+    items: [
+      { name: "Node.js", level: 85 },
+      { name: "Express.js", level: 80 },
+      { name: "Python", level: 75 },
+      { name: "Django", level: 70 },
+    ],
   },
   {
-    label: "Internships",
-    value: "2",
-    sub: "Full‑Stack & Backend",
+    title: "Cloud & Databases",
+    icon: <Cloud />,
+    meta: "3 skills",
+    items: [
+      { name: "MongoDB", level: 85 },
+      { name: "MySQL", level: 80 },
+      { name: "Docker", level: 75 },
+    ],
   },
   {
-    label: "CPI",
-    value: "7.9+",
-    sub: "Consistently high",
+    title: "DevOps & Tooling",
+    icon: <Container />,
+    meta: "3 skills",
+    items: [
+      { name: "Git", level: 90 },
+      { name: "CI/CD", level: 75 },
+      { name: "Linux", level: 80 },
+    ],
   },
-];
-
-const principles = [
-  "Ship with intent — measure impact and iterate quickly.",
-  "Design for change — clean abstractions and clear boundaries.",
-  "Performance first — fast APIs, optimized queries, smooth UI.",
-  "Ownership — from architecture to deployment and monitoring.",
 ];
 
 const Skills = () => {
@@ -64,21 +79,6 @@ const Skills = () => {
             </div>
           ))}
 
-          {/* Principles card (spans one col on md like in ref) */}
-          <div className="md:col-span-1 rounded-2xl border border-slate-700 bg-slate-900/60 px-5 py-5 flex flex-col
-                          hover:border-blue-500/80 hover:-translate-y-1 transition-all duration-300">
-            <div className="text-sm font-semibold mb-2">
-              Principles I work by
-            </div>
-            <ul className="space-y-2 text-xs text-slate-300">
-              {principles.map((p) => (
-                <li key={p} className="flex gap-2">
-                  <span className="text-blue-400 mt-[2px]">•</span>
-                  <span>{p}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Skills grid */}
@@ -151,4 +151,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SectionWrapper(Skills, "skills");

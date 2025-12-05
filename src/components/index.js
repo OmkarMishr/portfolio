@@ -8,6 +8,8 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import Skills from "./Skills";
+import Resume from './Resume';
 
 
 export {
@@ -19,6 +21,8 @@ export {
   Works,
   Feedbacks,
   Contact,
+  Skills,
+  Resume,
   CanvasLoader,
   EarthCanvas, 
   BallCanvas, 
