@@ -204,7 +204,7 @@ const projects = [
       },
     ],
     image: Hotelzz,
-    source_code_link: "https://https://github.com/OmkarMishr/hotel-management",
+    source_code_link: "https://github.com/OmkarMishr/hotel-management",
   },
   {
     name: "AchievR ",
@@ -249,7 +249,7 @@ const projects = [
       },
     ],
     image: EBMR,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/OmkarMishr/Emotion-Bashed-Music-Recommender",
   },
 ];
 
