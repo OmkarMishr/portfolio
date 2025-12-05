@@ -2,6 +2,8 @@ import React from "react";
 import { skillsData } from "../constants";
 import { statCards } from "../constants";
 import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { Code2,Wrench,Cloud,Server } from "lucide-react";
 
 
 const Skills = () => {
@@ -106,4 +108,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SectionWrapper(Skills, "skills");

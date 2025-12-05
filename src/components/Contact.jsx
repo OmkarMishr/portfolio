@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { Github,Mail,Linkedin,Twitter } from 'lucide-react';
 
 const Contact = () => {
   const formRef = useRef();
@@ -65,9 +66,8 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className="">
+      <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -129,6 +129,42 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+    </div>
+    {/* Footer */}
+      <footer className="mt-auto w-full pt-10">
+        <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col items-center gap-4">
+          <h2 className="text-lg font-semibold tracking-wide">
+            Omkar <span className="text-[#60a5fa]">Mishra</span>
+          </h2>
+
+          <div className="flex gap-3">
+            {[
+              { label: "Email", icon: <Mail />, href: "omkarmishra591@gmail.com" },
+              { label: "GitHub", icon: <Github />, href: "https://github.com/OmkarMishr" },
+              { label: "LinkedIn", icon: <Linkedin />, href: "https://www.linkedin.com/in/omkar-mishra-b3677b246/" },
+              { label: "X", icon: <Twitter />, href: "https://x.com/Omkar____Mishra" },
+            ].map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-900/60 text-xs text-slate-200 transition-all duration-300 hover:border-[#60a5fa] hover:bg-slate-900 hover:-translate-y-[2px] hover:shadow-[0_12px_30px_rgba(15,23,42,0.9)]"
+                aria-label={item.label}
+              >
+                {item.icon}
+              </a>
+            ))}
+          </div>
+
+          <p className="text-xs text-slate-500 text-center">
+            Always open to interesting conversations and collaboration opportunities.
+          </p>
+          <p className="text-[11px] text-slate-600 text-center">
+            Built with care and intent by Omkar • © {new Date().getFullYear()} All rights reserved
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -30,7 +30,6 @@ import {
   AchievR,
   EBMR,
 } from "../assets";
-import { Code2,Wrench,Cloud,Server } from "lucide-react";
 
 export const navLinks = [
   {
@@ -38,16 +37,16 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
+    id: "skills",
+    title: "Skills",
   },
   {
     id: "resume",
     title: "Resume",
+  },
+  {
+    id: "contact",
+    title: "Contact",
   },
 
 ];
@@ -157,7 +156,7 @@ const experiences = [
 const skillsData = [
   {
     title: "Frontend Engineering",
-    icon: "💻",
+    icon: "",
     meta: "4 skills",
     items: [
       { name: "React", level: 90 },
