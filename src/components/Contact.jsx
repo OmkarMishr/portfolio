@@ -134,7 +134,7 @@ const Contact = () => {
       <footer className="mt-auto w-full pt-10">
         <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col items-center gap-4">
           <h2 className="text-lg font-semibold tracking-wide">
-            Omkar <span className="text-[#60a5fa]">Mishra</span>
+            Omkar <span className="text-[#915EFF]">Mishra</span>
           </h2>
 
           <div className="flex gap-3">

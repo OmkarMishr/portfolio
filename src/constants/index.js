@@ -153,50 +153,7 @@ const experiences = [
   },
 ];
 
-const skillsData = [
-  {
-    title: "Frontend Engineering",
-    icon: "",
-    meta: "4 skills",
-    items: [
-      { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 65 },
-      { name: "Tailwind CSS", level: 95 },
-    ],
-  },
-  {
-    title: "Backend & APIs",
-    icon: "🧩",
-    meta: "4 skills",
-    items: [
-      { name: "Node.js", level: 85 },
-      { name: "Express.js", level: 80 },
-      { name: "Python", level: 75 },
-      { name: "Django", level: 70 },
-    ],
-  },
-  {
-    title: "Cloud & Databases",
-    icon: "☁️",
-    meta: "3 skills",
-    items: [
-      { name: "MongoDB", level: 85 },
-      { name: "MySQL", level: 80 },
-      { name: "Docker", level: 75 },
-    ],
-  },
-  {
-    title: "DevOps & Tooling",
-    icon: "🛠",
-    meta: "3 skills",
-    items: [
-      { name: "Git", level: 90 },
-      { name: "CI/CD", level: 75 },
-      { name: "Linux", level: 80 },
-    ],
-  },
-];
+
 const statCards = [
   {
     label: "Years Experience",
@@ -296,4 +253,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, skillsData, projects,statCards };
+export { services, technologies, experiences, projects,statCards };
