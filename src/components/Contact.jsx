@@ -139,7 +139,7 @@ const Contact = () => {
 
           <div className="flex gap-3">
             {[
-              { label: "Email", icon: <Mail />, href: "omkarmishra591@gmail.com" },
+              { label: "Email", icon: <Mail />, href: "mailto:omkarmishra591@gmail.com" },
               { label: "GitHub", icon: <Github />, href: "https://github.com/OmkarMishr" },
               { label: "LinkedIn", icon: <Linkedin />, href: "https://www.linkedin.com/in/omkar-mishra-b3677b246/" },
               { label: "X", icon: <Twitter />, href: "https://x.com/Omkar____Mishra" },
@@ -147,8 +147,8 @@ const Contact = () => {
               <a
                 key={item.label}
                 href={item.href}
-                target="_blank"
-                rel="noreferrer"
+                target={item.label === "Email" ? "_self" : "_blank"}
+                rel={item.label === "Email" ? undefined : "noreferrer"}
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 bg-slate-900/60 text-xs text-slate-200 transition-all duration-300 hover:border-[#60a5fa] hover:bg-slate-900 hover:-translate-y-[2px] hover:shadow-[0_12px_30px_rgba(15,23,42,0.9)]"
                 aria-label={item.label}
               >

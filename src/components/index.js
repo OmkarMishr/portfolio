@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Skills from "./Skills";
 import Resume from './Resume';
+import ErrorBoundary from './ErrorBoundary';
 
 
 export {
@@ -23,6 +24,7 @@ export {
   Contact,
   Skills,
   Resume,
+  ErrorBoundary,
   CanvasLoader,
   EarthCanvas, 
   BallCanvas, 

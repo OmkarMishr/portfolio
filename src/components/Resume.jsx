@@ -2,6 +2,7 @@ import React from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { File, Download } from 'lucide-react';
+import resumePdf from "../assets/resume/OmkarMishra_Resume.pdf";
 
 
 const Resume = () => {
@@ -60,8 +61,8 @@ const Resume = () => {
             {/* Buttons */}
             <div className="relative flex-1 flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
               <a
-                href="./assets/resume/Resume-Omkar Mishra271125.pdf"
-                download
+                href={resumePdf}
+                download="OmkarMishra_Resume.pdf"
                 className="group inline-flex items-center justify-center rounded-full bg-[#2563eb] px-8 py-3 text-sm font-semibold text-white shadow-[0_20px_50px_rgba(37,99,235,0.7)] transition-all duration-300 hover:bg-[#1d4ed8] hover:-translate-y-1 hover:shadow-[0_28px_80px_rgba(37,99,235,0.85)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-950 focus:ring-[#2563eb]"
               >
                 <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 border border-blue-200/40">
